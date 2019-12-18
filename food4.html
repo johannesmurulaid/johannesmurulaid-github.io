@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Nice Website</title>
+		<link rel="stylesheet" href="ilus.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main-div">
+			<header>
+				<h1>FoodFever</h1>
+			</header>
+			<ul>
+				<li><a href="food1.html">App description</a></li>
+				<li><a href="food2.html">User segment</a></li>
+				<li><a href="food3.html">Potential prototype</a></li>
+				<strong><li><a href="food4.html">Shopping Cart</a></li></strong>
+			</ul>
+			<div class="text-div">
+        <h2>Shopping Cart</h2>
+      </div>
+      <div id="item">
+        <img src="https://bit.ly/2LCIvED" width="100" />
+        <p>Cola</p>
+		<p id="item1Price">?</p>
+        <button onclick="addItem1();">+</button>
+        <p id="item1Count">0</p>
+        <button onclick="removeItem1();">-</button>
+      </div>
+      <div id="item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Pizza.jpg" width="100" />
+        <p>Pizza</p>
+		<p id="item2Price">?</p>
+        <button onclick="addItem2();">+</button>
+        <p id="item2Count">0</p>
+        <button onclick="removeItem2();">-</button>
+      </div>
+<p id="total">Total: 0€</p>
+      <footer>
+        <p>Copyright © Johannes Murulaid</p>
+      </footer>
+    </div>
+	
+	<script>
+	var item1Count = 0;
+	var item1Price = 0;
+	
+	item1Price = Math.floor(Math.random() * 1000) / 100;
+	document.getElementById("item1Price").innerHTML = item1Price;
+	
+	function addItem1() {
+		item1Count++;
+		document.getElementById("item1Count").innerHTML = item1Count;
+		
+		document.getElementById("total").innerHTML = "Total: " + Math.round((item1Count * item1Price + item2Count * item2Price) *100)/100 + "€";
+	}
+	
+	function removeItem1() {
+		if (item1Count > 0) { 
+			item1Count--;
+		}
+		document.getElementById("item1Count").innerHTML = item1Count;		
+		document.getElementById("total").innerHTML = "Total: " + Math.round((item1Count * item1Price + item2Count * item2Price) *100)/100 + "€";
+	}
+	var item2Count = 0;
+	var item2Price = 0;
+	
+	item2Price = Math.floor(Math.random() * 1000) / 100;
+	document.getElementById("item2Price").innerHTML = item2Price;
+	
+	function addItem2() {
+		item2Count++;
+		document.getElementById("item2Count").innerHTML = item2Count;
+		
+		document.getElementById("total").innerHTML = "Total: " + Math.round((item1Count * item1Price + item2Count * item2Price) *100)/100 + "€";
+	}
+	
+	function removeItem2() {
+		if (item2Count > 0) { 
+			item2Count--;
+		}
+		document.getElementById("item2Count").innerHTML = item2Count;		
+		document.getElementById("total").innerHTML = "Total: " + Math.round((item1Count * item1Price + item2Count * item2Price) *100)/100 + "€";
+	}
+	
+	</script>
+			
+	</body>
+</html>

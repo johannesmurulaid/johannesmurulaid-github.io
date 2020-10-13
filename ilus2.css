@@ -1,0 +1,70 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color:#D0CCD0;
+	color: #888;
+	background-image: url("https://i.imgur.com/AVvOySW.jpg");
+	background-size:cover;
+	background-blend-mode:multiply;
+	padding:1.5em;
+}
+.main-div{
+	background-color: white ;
+	max-width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+header{
+	background-color: #1B2A41;
+	text-align: center;
+	padding: 5px;
+	color:white;
+}
+a{
+	text-decoration: none;
+	color:#1B2A41;
+}
+li{
+	list-style:none;
+	color:black;
+}
+ul{
+	max-width:230px;
+	padding:10px;
+	float:left;
+}
+.text-div{
+	max-width:530px;
+	padding:10px;
+	float:right;
+	color: #1B2A41
+}
+footer{
+	background-color:#1B2A41;
+	text-align:right;
+	clear:both;
+	color:white;
+}
+img{
+	float:;
+}
+#list{
+	width:.3em;
+}
+#item{
+	max-width: 200px;
+	color: white;
+	background-color: #23DCAA;
+	float:right;
+	border: 3px solid black;
+	margin: .1em;
+	padding: .2em;
+	font-size: 20px
+}
+#item button{
+	font-size: 20px
+}
+
+
+
+
+
